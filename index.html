@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntegraVet</title>
+    <link rel="stylesheet" href="./estilo/style.css">
+    
+</head>
+<body>
+    <header class="container">
+        <div class="logo">
+            <img src="imagens/logo.png" alt="logo" class="logoSup">
+            <p><span id="integra">Integra</span><span id="vet">Vet</span></p>
+        </div>
+        <nav class="navBar" id="nav">
+            <span id="menu">
+                <a href="#inicio">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#agendamento">Agendamento</a>
+                <a href="#contato">Contato</a>
+            </span>
+            <img src="imagens/menu.png" alt="btn" id="btn-mobile">
+        </nav>
+    </header>
+    <main class="corpo">
+        <div id="inicio">
+            <div>
+                <h1>Cuidado Completo para Seu Melhor Amigo</h1>
+                <p>Clínica veterinária com profissionais especializados, equipamentos modernos e amor pelos animais. Oferecemos consultas, cirurgias, vacinação e muito mais.</p>
+                <div class="buttons-container">
+                    <a href="#agendamento" class="button button2">Agendar consulta</a>
+                    <a href="#servicos" class="button button1">Nossos Serviços</a>
+                </div>
+            </div>
+            <picture>
+                <img src="imagens/dog.jpg" alt="foto">
+            </picture>
+        </div>
+        <div id="servicos">
+            <div class="tittle">
+                <h2>Nossos Serviços</h2>
+                <p>Oferecemos uma ampla gama de serviços veterinários para garantir a saúde e bem-estar do seu animal de estimação.</p>
+            </div>
+            <div class="container">
+                <div class="cards">
+                    <img src="imagens/estetoscopio.png" alt="icon">
+                    <h3>Consultas Gerais</h3>
+                    <p>Avaliação completa da saúde do seu pet com profissionais experientes.</p>
+                </div>
+                <div class="cards">
+                    <img src="imagens/tesoura.png" alt="">
+                    <h3>Cirurgias</h3>
+                    <p>Procedimentos cirúrgicos com equipamentos modernos e anestesia segura.</p>
+                </div>
+                <div class="cards">
+                    <img src="imagens/vacina.png" alt="">
+                    <h3>Vacinação</h3>
+                    <p>Protocolo completo de vacinas para manter seu pet protegido.</p>
+                </div>
+                <div class="cards">
+                    <img src="imagens/coracao.png" alt="">
+                    <h3>Check-up Preventivo</h3>
+                    <p>Exames regulares para detectar problemas antes que se tornem graves.</p>
+                </div>
+                <div class="cards">
+                    <img src="imagens/remedio.png" alt="">
+                    <h3>Farmácia Veterinária</h3>
+                    <p>Medicamentos e produtos de qualidade para o tratamento do seu pet.</p>
+                </div>
+                <div class="cards">
+                    <img src="imagens/relogio.png" alt="">
+                    <h3>Emergências 24h</h3>
+                    <p>Atendimento de urgência disponível todos os dias, a qualquer hora.</p>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="agendamento">
+            <div class="tittle">
+                <h2>Agende uma Consulta</h2>
+                <p>Preencha o formulário abaixo e entraremos em contato para confirmar seu agendamento.</p>
+            </div>
+            <div class="agend">
+                <picture id="foto-agenda">
+                    <img src="imagens/vet.jpg" alt="vet">
+                </picture>
+                <form action="" method="post">
+                    <div class="form-grupo">
+                        <label for="nome">Seu Nome</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="mail">E-mail</label>
+                        <input type="email" name="mail" id="mail">
+                    </div>
+
+                    <div class="form-grupo" id="telefone">
+                        <label for="tel">Telefone</label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="pet">Nome do Pet</label>
+                        <input type="text" name="nomepet" id="nomepet">
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="type">Tipo de Animal</label>
+                        <select name="type" id="type">
+                            <option value="0">Selecione</option>
+                            <option value="dog">Cachorro</option>
+                            <option value="cat">Gato</option>
+                            <option value="bird">Pássaro</option>
+                            <option value="rabbit">Coelho</option>
+                            <option value="other">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-grupo" id="servico">
+                        <label for="servic">Serviço Desejado</label>
+                        <select name="servic" id="servic">
+                            <option value="0">Selecione</option>
+                            <option value="1">Consulta Geral</option>
+                            <option value="2">Vacinação</option>
+                            <option value="3">Cirurgia</option>
+                            <option value="4">Check-up</option>
+                            <option value="5">Emergência</option>
+                        </select>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="date">Data Preferida</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="time">Hora Preferida</label>
+                        <input type="time" name="time" id="time">
+                    </div>
+
+                    <div class="form-grupo" id="observ">
+                        <label for="obs">Observações (opcional)</label>
+                        <textarea name="obs" id="obs" placeholder="Descreva os sintomas ou motivo da consulta..." ></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar Agendamento" id="enviar">
+                </form>
+            </div>
+        </div>
+
+        <div id="contato">
+            <div class="tittle">
+                <h2>Entre em Contato</h2>
+                <p>Estamos aqui para ajudar você e seu pet. Entre em contato conosco!</p>
+            </div>
+            <div class="contatos">
+                <div class="card-contato">
+                    <img src="imagens/local.png" alt="local">
+                    <h4>Endereço</h4>
+                    <p>Av. Rio Grande do Sul, 603</p>
+                    <p>Centro, Tapira - PR</p>
+                    <p>CEP: 87830-000</p>
+                </div>
+                <div class="card-contato">
+                    <img src="imagens/tel.png" alt="">
+                    <h4>Telefone</h4>
+                    <p>(44) 91234-5678</p>
+                    <p>(44) 98765-4321</p>
+                    <p>WhatsApp disponível</p>
+                </div>
+                <div class="card-contato">
+                    <img src="imagens/insta.png" alt="">
+                    <h4>Instagram</h4>
+                    <p>@vetcare</p>
+                    <p>@veterinária</p>
+                </div>
+                <div class="card-contato">
+                    <img src="imagens/clock.png" alt="">
+                    <h4>Horário</h4>
+                    <p>Segunda a Sexta: 8h - 20h</p>
+                    <p>Sábados: 8h - 18h</p>
+                    <p>Emergências: 24h</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="rodape-itens">
+            <div class="tittle-rodape">
+                <section>
+                    <img src="imagens/miniLogo.jpeg" alt="">
+                    <h4>IntegraVet</h4>
+                </section>
+                <p>Cuidando do seu melhor amigo com amor, dedicação e profissionalismo.</p>
+            </div>
+            <div class="lista-rodape">
+                <ul id="ul-cima">
+                    <li style="list-style: none;">Clínica</li>
+                    <li>Reprodução</li>
+                    <li>Consultoria a Campo</li>
+                    <li>Brucelose</li>
+                    <li>Tuberculose</li>
+                </ul>
+                <p>
+                    Dr. Murillo David Silva
+                </p>
+                <p>
+                    Dra. Mariana Silva
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="direitos">
+            <p>© 2026 IntegraVet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
